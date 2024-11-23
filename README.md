@@ -1,37 +1,39 @@
 # NoRot Browser Extension
 
-NoRot is a Chrome extension that helps combat the degradation of online communication by detecting and suggesting alternatives to internet slang, memes, and "brainrot" content. Our goal is to improve online discourse one word at a time, making the internet a place for more meaningful connection.
+NoRot is a Chrome extension designed to help young internet users break free from the cycle of repetitive internet slang and "brainrot" content. Our mission is to empower the next generation to communicate more meaningfully online, one message at a time.
 
 ## Why NoRot?
 
-In today's online environment, meaningful communication is often replaced by:
-- Overused memes and internet slang
-- Low-effort, repetitive phrases
-- "NPC-like" responses
-- Viral content references
-- Trending TikTok/social media phrases
+Today's youth are increasingly trapped in a cycle of:
+- Mindless repetition of TikTok phrases
+- Copy-paste meme responses
+- "NPC-like" communication patterns
+- Viral content references instead of original thoughts
+- Shallow, trending internet slang
 
-This "brainrot" content:
-- Reduces the quality of online discourse
-- Makes it harder to express genuine thoughts and emotions
-- Creates barriers to real connection
-- Perpetuates shallow, repetitive communication patterns
+This "brainrot" content particularly affects young people by:
+- Limiting their ability to develop unique communication styles
+- Reducing their capacity for original thought and expression
+- Creating social pressure to conform to internet speech patterns
+- Making it harder to transition between casual and formal communication
+- Affecting their ability to connect meaningfully with others
 
-NoRot helps by:
-1. Detecting when you're using these patterns
-2. Suggesting more meaningful alternatives
-3. Maintaining your intended message while improving its expression
-4. Teaching better communication habits over time
+NoRot helps young users by:
+1. Gently identifying when they're falling into repetitive patterns
+2. Teaching them more expressive alternatives
+3. Maintaining their voice while improving their communication
+4. Building better habits for both online and offline interaction
+5. Helping them develop their own authentic communication style
 
 ## Features
 
 - Real-time text analysis for "brainrot" content
-- Smart suggestions for more meaningful alternatives
-- Draggable suggestion popup with expandable view
-- Statistics tracking for suggestions and acceptance rate
-- Support for text inputs, textareas, and contenteditable elements
-- Comprehensive analysis of detected terms and patterns
-- Privacy-focused (all processing happens locally or through secure API)
+- Smart suggestions that maintain youthful tone while improving expression
+- Friendly, non-judgmental popup interface
+- Progress tracking to encourage improvement
+- Support for all common text input methods
+- Privacy-focused design for user safety
+- Educational feedback on why certain phrases could be improved
 
 ## Installation
 
