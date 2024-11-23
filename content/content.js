@@ -66,11 +66,6 @@ function createSuggestionPopup(suggestedText, inputElement, onAccept, onDecline,
                 <img src="${chrome.runtime.getURL('images/icon.png')}" class="norot-icon" alt="NoRot">
                 <p>Suggestion Available</p>
             </div>
-            ${foundTerms.length > 0 ? `
-                <div class="norot-terms-found">
-                    <p>Found terms: ${foundTerms.join(', ')}</p>
-                </div>
-            ` : ''}
             <div class="norot-suggestion-text">
                 <p class="suggestion-text-content">${suggestedText}</p>
                 <button class="norot-expand" style="display: none;">Show More</button>
