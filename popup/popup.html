@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 320px;
+            padding: 20px;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .status-card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #10B981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f0;
+            margin-top: 12px;
+            font-size: 13px;
+            color: #6B7280;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4f46e5;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #6B7280;
+        }
+
+        .stat-small {
+            font-size: 16px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+            }
+
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #6B7280;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="../images/icon.png" alt="NoRot">
+            </div>
+            <h2>NoRot</h2>
+        </div>
+
+        <div class="status-card">
+            <div class="status-indicator">
+                <div class="dot"></div>
+                <span>Active and monitoring text input</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="improvement-rate">0%</span>
+                    <span class="stat-label">Text Needed Improvement</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="acceptance-rate">0%</span>
+                    <span class="stat-label">Suggestions Accepted</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value stat-small" id="suggestions-count">0</span>
+                    <span class="stat-label">Suggestions Made</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value stat-small" id="accepted-count">0</span>
+                    <span class="stat-label">Changes Applied</span>
+                </div>
+            </div>
+        </div>
+
+        <button id="reset-stats" style="
+            margin-top: 8px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            background: #EEF2FF;
+            color: #4F46E5;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        ">Reset Statistics</button>
+
+        <div class="footer">
+            Getting rid of the rot, one suggestion at a time.
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

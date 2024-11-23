@@ -1,0 +1,50 @@
+{
+    "manifest_version": 3,
+    "name": "NoRot",
+    "version": "1.0",
+    "description": "An extension to limit brain rot and promote real connection.",
+    "icons": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/icon.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content/content.js"
+            ],
+            "css": [
+                "content/styles.css"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "images/icon.png",
+            "48": "images/icon.png",
+            "128": "images/icon.png"
+        }
+    }
+}

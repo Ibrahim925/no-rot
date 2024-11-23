@@ -1,0 +1,80 @@
+#norot-suggestion-box {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 300px;
+    max-width: 90vw;
+    z-index: 999999;
+}
+
+.norot-suggestion-content {
+    padding: 16px;
+}
+
+.norot-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.norot-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.norot-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+.norot-suggestion-text {
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.norot-suggestion-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #4F46E5;
+    line-height: 1.5;
+}
+
+.norot-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.norot-accept, .norot-decline {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.norot-accept {
+    background: #4F46E5;
+    color: white;
+}
+
+.norot-accept:hover {
+    background: #4338CA;
+}
+
+.norot-decline {
+    background: #F3F4F6;
+    color: #374151;
+}
+
+.norot-decline:hover {
+    background: #E5E7EB;
+}
