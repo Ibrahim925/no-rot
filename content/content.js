@@ -26,6 +26,8 @@ async function checkText(text) {
         const data = await response.json();
         console.log('API response:', data);
 
+        if (!data.alternative) data.alternative = '';
+
         return {
             needsUpdate: data.brainrot,
             suggestedText: data.alternative.replace("\"", "").replace("\"", "") || '',
